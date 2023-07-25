@@ -11,10 +11,6 @@ app.get("/", (req: Request, res: Response) => {
   res.render("index");
 });
 
-app.get("/api", (req: Request, res: Response) => {
-  res.json({ key: "value" });
-});
-
 server.listen(PORT || 3000, () => {
   console.log(`EJS Template Server Listening On ${PORT}`);
 });
